@@ -1,0 +1,96 @@
+/* styles/Footer.css */
+.docspot-footer {
+    background: #07090c;
+    padding: 3rem 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.footer-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.brand-section {
+    margin-bottom: 2rem;
+}
+
+.footer-logo {
+    color: #2563eb;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-tagline {
+    color: #6b7280;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.links-heading {
+    color: #1f2937;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.links-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.links-column a {
+    color: #4b5563;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.links-column a:hover {
+    color: #2563eb;
+}
+
+.contact-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-item span {
+    display: block;
+    color: #1f2937;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.contact-item p {
+    color: #4b5563;
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1.5rem 0 0;
+    color: #6b7280;
+    font-size: 0.8rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .links-column {
+        margin-bottom: 1.5rem;
+    }
+}
