@@ -1,0 +1,143 @@
+/* styles/AppointmentSection.css */
+.appointment-section {
+    padding: 4rem 2rem;
+    background: #f8fafc;
+}
+
+.appointment-container {
+    display: flex;
+    min-height: 60vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.appointment-half {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.left-section {
+    background: #CDFE65;
+    border-radius: 2rem;
+    padding: 3rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.right-section {
+    background: #CDFE65;
+    border-radius: 2rem;
+    padding: 3rem;
+    color: black;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.highlight {
+    color: #2563eb;
+    display: inline-block;
+}
+
+.right-section .highlight {
+    color: #ffffff;
+}
+
+.section-subtitle {
+    color: #07090c;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.large-image {
+    width: 320px; /* 4x larger than previous 80px */
+    height: 320px;
+    object-fit: contain;
+    opacity: 0.15;
+    position: absolute;
+}
+
+.left-section .large-image {
+    right: -50px;
+    bottom: -50px;
+}
+
+.right-section .large-image {
+    left: -50px;
+    top: -50px;
+}
+
+.cta-button {
+    padding: 1.2rem 2.5rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.cta-button {
+    background: #2563eb;
+    color: white;
+}
+
+.right-section .cta-button {
+    background: #ffd700;
+    color: #1e293b;
+}
+
+.cta-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.arrow {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+    .appointment-container {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .large-image {
+        width: 240px;
+        height: 240px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .appointment-half {
+        padding: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .large-image {
+        width: 160px;
+        height: 160px;
+    }
+}
