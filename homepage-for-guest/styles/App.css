@@ -1,0 +1,14 @@
+/* styles/App.css */
+.app-container {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Add global styles here */
+body {
+  margin: 0;
+  padding: 0;
+}
