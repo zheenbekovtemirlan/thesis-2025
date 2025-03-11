@@ -38,10 +38,6 @@
 .nav-link:hover {
     color: #2563eb;
 }
-
-/* Navbar.css - ADD THESE NEW RULES AT THE BOTTOM */
-/* Keep all existing styles unchanged */
-
 /* Specific styles for My Account */
 .nav-auth .account-button {
     color: #07090c;
